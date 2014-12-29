@@ -1,0 +1,3 @@
+#!/bin/bash
+./1-setupVM.sh
+./2-customVM.sh -h misc01 -d ctf.hf -i 172.28.72.4 -n 255.255.255.0 -g 172.28.72.1 -z PUBLIC -o HF

