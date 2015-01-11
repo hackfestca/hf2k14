@@ -1,0 +1,17 @@
+Teaser1:
+1- change the extention for pcap
+2- extract the java.jar file from http transfer with wireshark (File -> export Object -> HTTP)
+3- open java.jar with Archive Manager. Extract pass and archive.rar
+4- do a rot13 on the password to got supersecure 
+5- Extrac all file with the password supersecure.
+6- Recreate the spit file (cat x* > file.txt)
+7- do a type on the file.txt to sea that it's a zip
+8- Extract the iso from zip
+9- open the iso and recover the ods file
+10-Open with LibreOffice and go at the far right and buttom there is a qrcode 
+11- scan the qrcode
+12- Be happy to have the flag
+Teaser2: 
+change the file extention for .eml. Open it with thunderbird
+User steghide on the email picture. recover the private pgp key. Decrypt the encrypted file. 
+You got the flag :) 

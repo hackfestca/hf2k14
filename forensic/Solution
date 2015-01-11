@@ -1,0 +1,8 @@
+the 6 password are : 
+
+1-Recover the wifi password from Network-Manger in /etc/NetworkManager/system-connections
+2-In the firefox password cache
+3-In the gnome keyring 
+4-In remina save password from session
+5-In the log file of xen-tool in /var/log/xen-tool
+6-crack the hfadmin password in /etc/shadow
